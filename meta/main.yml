@@ -1,7 +1,7 @@
 dependencies: []
 
 galaxy_info:
-  role_name: disable-ipv6
+  role_name: disable_ipv6
   author: dmotte
   description: Ansible role to disable IPv6 completely on Debian/Ubuntu hosts
   license: MIT
@@ -19,4 +19,3 @@ galaxy_info:
     - network
     - system
     - sysctl
-    - debian-based
