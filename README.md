@@ -17,3 +17,21 @@ Ansible role to **disable IPv6** completely on Debian/Ubuntu hosts.
    ```
 
 > **Note**: this role must be run as root (`ansible_become: yes`), because it needs to be able to use the `sysctl` command.
+
+## Development
+
+If you want to contribute to this project, you can use the `playbook.yml` file to test the role while editing it.
+
+First of all, clone this repository on your local machine:
+
+```bash
+git clone https://github.com/dmotte/ansible-role-disable-ipv6.git
+```
+
+Then place your `hosts.yml` file inside the folder.
+
+Finally, you can execute the playbook against your host:
+
+```bash
+ansible-playbook -i hosts.yml playbook.yml
+```
