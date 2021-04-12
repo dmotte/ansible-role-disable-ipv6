@@ -1,3 +1,5 @@
-- name: Reload the sysctl kernel parameters configuration from the filesystem
+- name: Reload the sysctl configuration
+  # We have to use the shell module here because (to date) the
+  # ansible.posix.sysctl module does not allow to force a reload
   shell:
     cmd: sysctl --system
