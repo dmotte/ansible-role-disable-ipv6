@@ -28,10 +28,11 @@ First of all, **clone this repository** on your local machine:
 git clone https://github.com/dmotte/ansible-role-disable-ipv6.git
 ```
 
-Then place your `hosts.yml` file inside the folder.
+Then place your inventory file (e.g. `hosts.yml`) inside the `tests` folder.
 
 Finally, you can **execute the playbook** against your host:
 
 ```bash
+cd tests/
 ansible-playbook -i hosts.yml playbook.yml
 ```

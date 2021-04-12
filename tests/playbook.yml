@@ -1,0 +1,8 @@
+#!/usr/bin/env ansible-playbook
+---
+- hosts: all
+
+  tasks:
+    - name: Include the role from the parent directory
+      include_role: { name: "{{playbook_dir | dirname}}" }
+      vars: { ansible_become: yes }

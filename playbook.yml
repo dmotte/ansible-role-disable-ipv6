@@ -1,8 +1,0 @@
-#!/usr/bin/env ansible-playbook
----
-- hosts: all
-
-  tasks:
-    - name: Include the role from the current directory
-      include_role: { name: "{{playbook_dir}}" }
-      vars: { ansible_become: yes }
