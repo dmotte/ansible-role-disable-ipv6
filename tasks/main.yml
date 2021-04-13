@@ -1,3 +1,4 @@
+---
 - name: Set net.ipv6.conf.all.disable_ipv6 in the sysctl configuration file
   sysctl:
     name: net.ipv6.conf.all.disable_ipv6

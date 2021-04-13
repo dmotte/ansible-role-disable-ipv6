@@ -1,3 +1,4 @@
+---
 name: release
 
 # This workflow requires a GALAXY_API_KEY secret to be defined in the GitHub
