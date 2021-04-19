@@ -19,3 +19,6 @@
     value: "1"
     reload: no
   notify: Reload the sysctl configuration
+
+- name: Force all notified handlers to run at this point
+  meta: flush_handlers
