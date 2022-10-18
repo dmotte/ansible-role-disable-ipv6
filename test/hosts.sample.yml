@@ -1,7 +1,7 @@
 ---
 all:
   hosts:
-    myserver:
+    mainhost:
       ansible_host: myserver.example.com
       ansible_port: 2001
   vars:
