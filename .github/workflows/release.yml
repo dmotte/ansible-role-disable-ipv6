@@ -6,10 +6,7 @@ name: release
 
 on:
   push:
-    branches: [main]
-    paths-ignore:
-      - test/**
-      - LICENSE
+    tags: ["*"]
 
 jobs:
   release:
