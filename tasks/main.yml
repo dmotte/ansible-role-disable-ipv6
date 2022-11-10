@@ -1,24 +1,24 @@
 ---
 - name: Set net.ipv6.conf.all.disable_ipv6 in the sysctl configuration file
-  sysctl:
+  ansible.posix.sysctl:
     name: net.ipv6.conf.all.disable_ipv6
     value: "1"
     reload: no
   notify: Reload the sysctl configuration
 
 - name: Set net.ipv6.conf.default.disable_ipv6 in the sysctl configuration file
-  sysctl:
+  ansible.posix.sysctl:
     name: net.ipv6.conf.default.disable_ipv6
     value: "1"
     reload: no
   notify: Reload the sysctl configuration
 
 - name: Set net.ipv6.conf.lo.disable_ipv6 in the sysctl configuration file
-  sysctl:
+  ansible.posix.sysctl:
     name: net.ipv6.conf.lo.disable_ipv6
     value: "1"
     reload: no
   notify: Reload the sysctl configuration
 
 - name: Force all notified handlers to run at this point
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers
