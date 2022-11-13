@@ -2,5 +2,5 @@
 - name: Reload the sysctl configuration
   # We have to use the shell module here because (to date) the
   # ansible.posix.sysctl module does not allow to force a reload
-  ansible.builtin.shell:
+  ansible.builtin.command:
     cmd: sysctl --system

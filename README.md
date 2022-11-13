@@ -13,10 +13,10 @@ Ansible role to **disable IPv6** completely on Debian/Ubuntu hosts.
    ```yaml
    - name: Include the dmotte.disable_ipv6 role
      ansible.builtin.include_role: { name: dmotte.disable_ipv6 }
-     vars: { ansible_become: yes }
+     vars: { ansible_become: true }
    ```
 
-> **Note**: this role must be run as root (`ansible_become: yes`), because it needs to be able to use the `sysctl` command.
+> **Note**: this role must be run as root (`ansible_become: true`), because it needs to be able to use the `sysctl` command.
 
 ## Development
 
