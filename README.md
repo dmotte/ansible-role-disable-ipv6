@@ -1,6 +1,6 @@
 # ansible-role-disable-ipv6
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dmotte/ansible-role-disable-ipv6/release?logo=github&style=flat-square)](https://github.com/dmotte/ansible-role-disable-ipv6/actions)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/dmotte/ansible-role-disable-ipv6/release.yml?branch=main&logo=github&style=flat-square)](https://github.com/dmotte/ansible-role-disable-ipv6/actions)
 [![Ansible Galaxy](https://img.shields.io/badge/galaxy-dmotte.disable__ipv6-blueviolet?logo=ansible&style=flat-square)](https://galaxy.ansible.com/dmotte/disable_ipv6)
 
 Ansible role to **disable IPv6** completely on Debian/Ubuntu hosts.
