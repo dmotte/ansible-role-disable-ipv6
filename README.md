@@ -14,9 +14,7 @@ Ansible role to **disable IPv6** completely on Debian/Ubuntu hosts.
 
 ### Role variables
 
-| Variable                   | Description                                                                                 |
-| -------------------------- | ------------------------------------------------------------------------------------------- |
-| `reload_sysctl_if_changed` | Whether or not to reload the sysctl configuration from disk if it changes (default: `true`) |
+See [`defaults/main.yml`](defaults/main.yml).
 
 ## Development
 
