@@ -4,4 +4,5 @@
   # ansible.posix.sysctl module does not allow to force a reload
   ansible.builtin.command:
     cmd: sysctl --system
+  changed_when: false
   when: reload_sysctl_if_changed
