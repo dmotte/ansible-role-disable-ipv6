@@ -1,2 +1,3 @@
 ---
+# Whether or not to reload the sysctl configuration if changed
 reload_sysctl_if_changed: true
