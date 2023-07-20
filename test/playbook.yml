@@ -6,6 +6,6 @@
   tasks:
     - name: Include the role from the parent directory
       ansible.builtin.include_role: { name: "{{ playbook_dir | dirname }}" }
-      vars:
+      vars: # noqa: var-naming[no-role-prefix]
         ansible_become: true
-        reload_sysctl_if_changed: false
+        disable_ipv6_reload_sysctl_if_changed: false

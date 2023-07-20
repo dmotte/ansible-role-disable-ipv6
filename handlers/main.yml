@@ -5,4 +5,4 @@
   ansible.builtin.command:
     cmd: sysctl --system
   changed_when: false
-  when: reload_sysctl_if_changed
+  when: disable_ipv6_reload_sysctl_if_changed
